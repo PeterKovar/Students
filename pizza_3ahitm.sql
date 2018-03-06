@@ -1,3 +1,6 @@
+CREATE DATABASE pizzabase;
+USE pizzabase;
+
 CREATE TABLE kunden(
 id INT(3) PRIMARY KEY,
 vorname VARCHAR(15) NOT NULL,
