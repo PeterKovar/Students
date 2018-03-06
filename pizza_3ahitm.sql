@@ -31,3 +31,22 @@ best_nr INT(5) PRIMARY KEY AUTO_INCREMENT,
 datum date NOT NULL,
 kunden_id INT(3) NOT NULL,
 pizzas_id INT(3) NOT NULL);
+
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 1, 1);
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 1, 2);
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 1, 4);
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 2, 2);
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 2, 1);
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 2, 3);
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 3, 1);
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 3, 2);
+INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
+VALUES (CURRENT_DATE(), 3, 3);
