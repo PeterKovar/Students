@@ -30,7 +30,14 @@ CREATE TABLE bestellungen(
 best_nr INT(5) PRIMARY KEY AUTO_INCREMENT,
 datum date NOT NULL,
 kunden_id INT(3) NOT NULL,
-pizzas_id INT(3) NOT NULL);
+pizzas_id INT(3) NOT NULL,
+FOREIGN KEY(kunden_id) REFERENCES kunden_id(id)
+ON UPDATE CASCADE
+ON DELETE NO ACTION,
+FOREIGN KEY(pizzas_id) REFERENCES pizzas(id)
+ON UPDATE CASCADE
+ON DELETE NO ACTION
+);
 
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
 VALUES (CURRENT_DATE(), 1, 1);
