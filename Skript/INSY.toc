@@ -1,5 +1,0 @@
-\contentsline {section}{\tocsection {}{1}{Basic Script}}{1}
-\contentsline {section}{\tocsection {}{2}{\\Joins}}{2}
-\contentsline {subsection}{\tocsubsection {}{2.1}{Wer hatte welche Pizza}}{2}
-\contentsline {subsection}{\tocsubsection {}{2.2}{Wer hatte welche Pizza mit Preis}}{3}
-\contentsline {subsection}{\tocsubsection {}{2.3}{Wieviel ist der Umsatz pro Kunde}}{3}
