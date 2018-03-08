@@ -31,7 +31,7 @@ best_nr INT(5) PRIMARY KEY AUTO_INCREMENT,
 datum date NOT NULL,
 kunden_id INT(3) NOT NULL,
 pizzas_id INT(3) NOT NULL,
-FOREIGN KEY(kunden_id) REFERENCES kunden_id(id)
+FOREIGN KEY(kunden_id) REFERENCES kunden(id)
 ON UPDATE CASCADE
 ON DELETE NO ACTION,
 FOREIGN KEY(pizzas_id) REFERENCES pizzas(id)
