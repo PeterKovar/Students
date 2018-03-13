@@ -44,16 +44,16 @@ VALUES (CURRENT_DATE(), 1, 1);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
 VALUES (CURRENT_DATE(), 1, 2);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
-VALUES (CURRENT_DATE(), 1, 4);
+VALUES ('2018-03-05', 1, 4);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
-VALUES (CURRENT_DATE(), 2, 2);
+VALUES ('2018-03-05', 2, 2);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
-VALUES (CURRENT_DATE(), 2, 1);
+VALUES ('2018-03-05', 2, 1);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
-VALUES (CURRENT_DATE(), 2, 3);
+VALUES ('2018-03-07', 2, 3);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
-VALUES (CURRENT_DATE(), 3, 1);
+VALUES ('2018-03-07', 3, 1);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
-VALUES (CURRENT_DATE(), 3, 2);
+VALUES ('2018-03-07', 3, 2);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
-VALUES (CURRENT_DATE(), 3, 3);
+VALUES ('2018-03-07', 3, 3);
