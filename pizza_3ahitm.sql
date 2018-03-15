@@ -57,3 +57,26 @@ INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
 VALUES ('2018-03-07', 3, 2);
 INSERT INTO bestellungen (datum, kunden_id, pizzas_id)
 VALUES ('2018-03-07', 3, 3);
+
+
+CREATE TABLE zutaten(
+id INT(3) PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(20) NOT NULL);
+
+INSERT INTO zutaten (name) VALUES
+('Tomaten'),('Käse'),('Salami'),('Thunfisch'),('Schinken'),
+('Ananas'),('Pfefferoni');
+
+CREATE TABLE belag(
+pizzas_id INT(3) NOT NULL,
+zutaten_id INT(3) NOT NULL,
+FOREIGN KEY(pizzas_id) REFERENCES pizzas(id)
+ON DELETE CASCADE on UPDATE CASCADE,
+FOREIGN KEY(zutaten_id) REFERENCES zutaten(id)
+ON DELETE CASCADE on UPDATE CASCADE
+);
+
+INSERT INTO belag VALUES (1,1),(1,2),(1,5),(1,6);
+INSERT INTO belag VALUES (2,1),(2,2),(2,3);
+INSERT INTO belag VALUES (3,1),(3,2),(3,4);
+INSERT INTO belag VALUES (4,1),(4,2),(4,3),(4,5),(4,7);
