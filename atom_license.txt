@@ -1,0 +1,2 @@
+
+https://github.com/atom/atom/blob/f6a59621b856795bc72f40914bb66af34593bd0c/LICENSE.md
